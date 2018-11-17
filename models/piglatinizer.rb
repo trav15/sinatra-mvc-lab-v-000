@@ -9,5 +9,7 @@ class PigLatinizer
     words = @text.split(" ")
     words.each do |word|
       word << "#{word.chars.first}ay"
+      word.slice!
+    end
   end
 end
