@@ -8,4 +8,8 @@ class App < Sinatra::Base
   post '/' do
     erb :pig_latinized
   end
+  
+  post '/pig_latinized' do
+    erb :pig_latinized
+  end
 end
