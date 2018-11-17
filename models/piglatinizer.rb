@@ -1,16 +1,16 @@
 class PigLatinizer
   attr_reader :text
 
-  def initialize(text=nil)
-    @text = text
+  def initialize(text)
+    @text = text.downcase
   end
 
-  def piglatinize(text)
+  def piglatinizer
     words = @text.split(" ")
     words.each do |word|
       word << "#{word.chars.first}ay"
       word.slice!(0)
     end
-    words.join(" ")
+    words.joing(" ")
   end
 end
