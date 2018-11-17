@@ -11,7 +11,4 @@ class App < Sinatra::Base
     erb :pig_latinized
   end
 
-  post '/pig_latinized' do
-    erb :pig_latinized
-  end
 end
