@@ -11,6 +11,6 @@ class PigLatinizer
       word << "#{word.chars.first}ay"
       word.slice!
     end
-    words.joing(" ")
+    words.join(" ")
   end
 end
