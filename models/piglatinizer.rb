@@ -8,6 +8,6 @@ class PigLatinizer
   def piglatinizer
     words = @text.split(" ")
     words.each do |word|
-      word << "#{ay"
+      word << "#{word.chars.first}ay"
   end
 end
